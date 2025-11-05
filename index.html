@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy World Girl Day — Untuk Acel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: linear-gradient(135deg,#ffe6f0 0%, #ffd9f0 40%, #cbeafe 100%);
+      --accent:#ff6fa3;
+      --muted:#7b6f8a;
+      --card: rgba(255,255,255,0.85);
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; min-height:100vh; background:var(--bg1); display:flex; align-items:center; justify-content:center; padding:32px}
+    .stage{width:min(980px,96vw); background:transparent; position:relative}
+    .slider{position:relative; overflow:hidden; border-radius:22px; box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+    .slides{display:flex; transition:transform 600ms cubic-bezier(.2,.9,.2,1); width:500%;}
+    .slide{flex:0 0 100%; padding:48px 56px; min-height:420px; display:flex; gap:32px; align-items:center}
+    .hero{flex:1; background:var(--card); padding:28px; border-radius:18px; box-shadow:0 6px 18px rgba(0,0,0,0.06); position:relative}
+    .hero h1{margin:0; font-size:28px; color:#3a2b3b}
+    .hero .sub{color:var(--muted); margin-top:8px}
+    .hero p{margin-top:18px; line-height:1.5}
+    .big-emoji{font-size:72px; display:inline-block; transform:translateY(2px)}
+    .art{width:360px; flex:0 0 360px; display:flex; align-items:center; justify-content:center}
+    .card-art{width:280px; height:280px; border-radius:20px; background:linear-gradient(180deg,#fff 0%, #fff6fb 100%); display:flex; align-items:center; justify-content:center; flex-direction:column; box-shadow:0 8px 30px rgba(0,0,0,0.06);}
+    .heart{width:120px; height:120px}
+    .controls{position:absolute; left:20px; bottom:20px; display:flex; gap:12px}
+    .btn{background:var(--card); border:none; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer; box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .dotwrap{position:absolute; right:20px; bottom:20px; display:flex; gap:10px}
+    .dot{width:12px; height:12px; border-radius:50%; background:rgba(0,0,0,0.12); cursor:pointer}
+    .dot.active{background:var(--accent); box-shadow:0 6px 18px rgba(255,111,157,0.18)}
+    @media (max-width:880px){
+      .slide{flex-direction:column; padding:28px}
+      .art{order:-1; width:100%; justify-content:flex-start}
+      .card-art{width:100%; height:220px}
+    }
+    .confetti{pointer-events:none; position:absolute; inset:0; overflow:hidden}
+    .confetti i{position:absolute; font-size:18px; opacity:0.9; animation:float 3500ms linear forwards}
+    @keyframes float{
+      0%{transform:translateY(-20vh) rotate(0) scale(0.8); opacity:0}
+      10%{opacity:1}
+      100%{transform:translateY(120vh) rotate(720deg) scale(1.1); opacity:0}
+    }
+    .sticker{display:inline-block; padding:8px 12px; background:linear-gradient(90deg,#fff6ff,#fff); border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,0.06); font-weight:700}
+    .credit{position:absolute; left:20px; top:18px; font-size:13px; color:var(--muted)}
+    .photo-frame{width:300px; height:300px; border-radius:22px; overflow:hidden; box-shadow:0 6px 22px rgba(0,0,0,0.1); border:4px solid #fff}
+    .photo-frame img{width:100%; height:100%; object-fit:cover;}
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="slider" role="region" aria-label="Slide ucapan">
+      <div class="slides" id="slides">
+        <!-- Slide 1 -->
+        <section class="slide" style="background:linear-gradient(135deg,#fff8fb 0%, #ffeef7 100%)">
+          <div class="hero">
+            <div class="credit">Untuk: <strong>Sayangku</strong></div>
+            <h1>🎀 Happy World Girl Day!</h1>
+            <div class="sub">Hari spesial untuk perempuan yang paling manis di hidupku 💕</div>
+            <p>Sayang, terima kasih sudah jadi kamu: kuat, lucu, dan selalu membuat hariku lebih cerah.</p>
+            <p>Semoga hari ini penuh senyum, kejutan kecil, dan pelukan hangat.</p>
+            <p style="margin-top:14px;"><span class="sticker">Love you 3000 ✨</span></p>
+          </div>
+          <div class="art">
+            <div class="card-art">
+              <svg class="heart" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s-7-4.35-9.5-7.1C-0.2 9.9 3 5 6.5 6.4 9 7.6 10 11 12 12s3-4.4 5.5-5.6C21 5 24.2 9.9 21.5 13.9 20 16.65 12 21 12 21z" fill="#ff6fa3"/>
+              </svg>
+              <div style="margin-top:14px; text-align:center">Kamu adalah bintangku ✨</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide" style="background:linear-gradient(135deg,#fff 0%, #fef6ff 100%)">
+          <div class="hero">
+            <h1>Kenapa aku sayang kamu?</h1>
+            <div class="sub">Beberapa alasan kecil (tapi berarti)</div>
+            <ul style="margin-top:14px; line-height:1.7">
+              <li>💬 Selalu mendengarkan saat aku curhat</li>
+              <li>😂 Tawamu & suaramu itu musik terbaikku</li>
+              <li>🎨 Kreatif dan penuh ide</li>
+              <li>🥺 Sabar banget ngadepin aku dan Terima kasih selalu memaafkan aku yang sering buat kesalahan</li>
+            </ul>
+            <p style="margin-top:12px">Masih banyak alasan lain, nanti aku bisikin ya 😌</p>
+          </div>
+          <div class="art">
+            <div class="card-art">
+              <svg width="140" height="140" viewBox="0 0 24 24" class="big-emoji">
+                <text x="0" y="110" font-size="120">🥰</text>
+              </svg>
+              <div style="margin-top:8px;">Bahagia kalau bareng kamu</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide" style="background:linear-gradient(135deg,#fff8f0 0%, #fff0f7 100%)">
+          <div class="hero">
+            <h1>Aku janji...</h1>
+            <div class="sub">Beberapa janji manis untuk kamu</div>
+            <ol style="margin-top:14px; line-height:1.7">
+              <li>Selalu jadi tempat kamu tertawa & nangis</li>
+              <li>Mendukung mimpi-mimpimu, sekecil atau sebesar apapun</li>
+              <li>Membuat hari spesialmu jadi lebih spesial setiap tahun</li>
+              <li>Tetap cinta walau kamu ngambek 🥺</li>
+              <li>Belajar buat nda sering jahilin kamu hehe (tapi nda janji mwahh)</li>
+            </ol>
+            <p style="margin-top:12px">Hari ini dan selalu — aku pilih kamu ❤️</p>
+          </div>
+          <div class="art">
+            <div class="card-art">
+              <svg viewBox="0 0 100 100" width="160" height="160">
+                <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#ffd0e6"/><stop offset="1" stop-color="#ffb3da"/></linearGradient></defs>
+                <circle cx="50" cy="50" r="44" fill="url(#g1)" />
+                <text x="50" y="58" font-size="34" text-anchor="middle">❤</text>
+              </svg>
+              <div style="margin-top:8px;">Untuk selamanya</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="slide" style="background:linear-gradient(135deg,#f8fff7 0%, #fff6ff 100%)">
+          <div class="hero">
+            <h1>Happy World Girl Day, Putri Cahyan Tuna Kesayanganku!</h1>
+            <div class="sub">Semoga hari ini kamu dimanja dan penuh cinta 💕</div>
+            <p style="margin-top:18px; font-weight:600; font-size:17px">Klik ♥ untuk meneruskan cinta ini, kalau kamu ingin balas 💌</p>
+            <p style="margin-top:12px"><button class="btn" id="shareBtn">💌 Kirim Pesan Spesial</button></p>
+          </div>
+          <div class="art">
+            <div class="card-art">
+              <svg width="130" height="130" viewBox="0 0 24 24"><text x="0" y="110" font-size="120">🎁</text></svg>
+              <div style="margin-top:10px">Hadiah virtual: pelukan + cium 💋</div>
+            </div>
+          </div>
+        </section>
+
+      <div class="confetti" id="confetti"></div>
+      <div class="controls">
+        <button class="btn" id="prev">◀ Prev</button>
+        <button class="btn" id="next">Next ▶</button>
+        <button class="btn" id="autoplay">Auto ▶</button>
+      </div>
+      <div class="dotwrap" id="dots"></div>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    const total = slides.children.length;
+    let idx = 0;
+    const dotsWrap = document.getElementById('dots');
+    let autoplay = false;
+    let timer = null;
+
+    function renderDots(){
+      dotsWrap.innerHTML = '';
+      for(let i=0;i<total;i++){
+        const d = document.createElement('div');
+        d.className = 'dot' + (i===idx? ' active':'');
+        d.addEventListener('click', ()=> go(i));
+        dotsWrap.appendChild(d);
+      }
+    }
+    function go(i){
+      idx = (i+total) % total;
+      slides.style.transform = `translateX(${-idx*100}%)`;
+      renderDots();
+      burstHearts(6);
+    }
+    document.getElementById('next').addEventListener('click', ()=> go(idx+1));
+    document.getElementById('prev').addEventListener('click', ()=> go(idx-1));
+    document.getElementById('autoplay').addEventListener('click', (e)=>{
+      autoplay = !autoplay;
+      e.target.textContent = autoplay ? 'Stop ⏸' : 'Auto ▶';
+      if(autoplay){ timer = setInterval(()=> go(idx+1), 3800) } else { clearInterval(timer) }
+    });
+    renderDots();
+
+    const confetti = document.getElementById('confetti');
+    function burstHearts(n=8){
+      for(let i=0;i<n;i++){
+        const el = document.createElement('i');
+        el.textContent = ['💖','💗','💘','💞','💕'][Math.floor(Math.random()*5)];
+        el.style.left = Math.random()*100 + '%';
+        el.style.fontSize = (12+Math.random()*28)+'px';
+        el.style.animationDuration = (2500+Math.random()*2500)+'ms';
+        confetti.appendChild(el);
+        setTimeout(()=> el.remove(), 6000);
+      }
+    }
+    burstHearts(12);
+
+    document.getElementById('shareBtn').addEventListener('click', ()=>{
+      const pesan = 'Hai sayang 💖 Happy World Girl Day! Aku kirim ini spesial buat kamu 💐';
+      const waURL = 'https://wa.me/62892741320?text=' + encodeURIComponent(pesan);
+      window.open(waURL, '_blank');
+    });
+    document.addEventListener('keydown', (e)=>{
+      if(e.key==='ArrowRight') go(idx+1);
+      if(e.key==='ArrowLeft') go(idx-1);
+      if(e.key===' ') { e.preventDefault(); document.getElementById('autoplay').click(); }
+    });
+  </script>
+</body>
+</html>
